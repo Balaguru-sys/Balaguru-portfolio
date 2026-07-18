@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaguru | Creative Designer Portfolio</title>
+    <meta name="description" content="Balaguru - Creative Designer specializing in branding, visual identity, packaging design, and digital design. View my portfolio of luxury brands, restaurants, fashion, and more.">
+    <meta name="keywords" content="Balaguru, Creative Designer, Graphic Designer, Branding, Visual Identity, Packaging Design, Logo Design, Portfolio, Madurai, Tamil Nadu">
+    <meta name="author" content="Balaguru K">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Balaguru | Creative Designer">
+    <meta property="og:description" content="Premium branding and visual identity design portfolio by Balaguru.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://balaguru.design">
+    <meta property="og:image" content="assets/images/about/profile.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Balaguru | Creative Designer">
+    <meta name="twitter:description" content="Premium branding and visual identity design portfolio.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>B</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="loading-letter" data-letter="B">B</span>
+                <span class="loading-letter" data-letter="A">A</span>
+                <span class="loading-letter" data-letter="L">L</span>
+                <span class="loading-letter" data-letter="A">A</span>
+                <span class="loading-letter" data-letter="G">G</span>
+                <span class="loading-letter" data-letter="U">U</span>
+                <span class="loading-letter" data-letter="R">R</span>
+                <span class="loading-letter" data-letter="U">U</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <div class="loading-percentage" id="loadingPercentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-wrapper" id="cursorWrapper">
+        <div class="cursor-dot" id="cursorDot"></div>
+        <div class="cursor-circle" id="cursorCircle"></div>
+        <div class="cursor-text" id="cursorText"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" data-cursor="logo">
+                <span class="logo-text">Balaguru</span>
+                <span class="logo-dot"></span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-cursor="link">Home</a>
+                <a href="#about" class="nav-link" data-cursor="link">About</a>
+                <a href="#projects" class="nav-link" data-cursor="link">Projects</a>
+                <a href="#contact" class="nav-link" data-cursor="link">Contact</a>
+            </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-cursor="button">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link" data-index="01">Home</a>
+            <a href="#about" class="mobile-link" data-index="02">About</a>
+            <a href="#projects" class="mobile-link" data-index="03">Projects</a>
+            <a href="#contact" class="mobile-link" data-index="04">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+        <!-- ==================== HOME SECTION ==================== -->
+        <section class="section section-home" id="home">
+            <div class="home-bg">
+                <div class="bg-gradient"></div>
+                <div class="bg-noise"></div>
+                <div class="bg-glow bg-glow-1"></div>
+                <div class="bg-glow bg-glow-2"></div>
+            </div>
+
+            <div class="home-container">
+                <div class="home-left">
+                    <div class="home-eyebrow" data-animate="fade-up">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-text">Creative Designer</span>
+                    </div>
+
+                    <h1 class="home-title">
+                        <span class="title-line" data-animate="split-text">Balaguru</span>
+                        <span class="title-line title-line-accent" data-animate="split-text">K</span>
+                    </h1>
+
+                    <p class="home-desc" data-animate="fade-up">
+                        Crafting visual identities that tell stories. Specializing in luxury branding, 
+                        packaging design, and digital experiences that leave lasting impressions.
+                    </p>
+
+                    <div class="home-cta" data-animate="fade-up">
+                        <a href="#projects" class="btn btn-primary" data-cursor="button">
+                            <span class="btn-text">View Projects</span>
+                            <span class="btn-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" data-cursor="button">
+                            <span class="btn-text">Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="home-stats" data-animate="fade-up">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="12">0</span>
+                            <span class="stat-label">Brands</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-right">
+                    <div class="home-image-wrapper" data-animate="scale-in">
+                        <div class="home-image-frame">
+                            <img src="assets/images/about/profile.jpg" width="932" height="1400" alt="Balaguru - Creative Designer" class="home-image" loading="eager">
+                        </div>
+                        <div class="home-image-glow"></div>
+                        <div class="floating-badge badge-1">
+                            <span class="badge-icon">✦</span>
+                            <span class="badge-text">Available for work</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <span class="badge-icon">📍</span>
+                            <span class="badge-text">Madurai, TN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" id="scrollIndicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="section section-about" id="about">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">About Me</span>
+                <h2 class="section-title">The Designer<br>Behind the Work</h2>
+            </div>
+
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-image-wrapper" data-animate="reveal-image">
+                        <div class="about-image-inner">
+                            <img src="assets/images/about/about-profile.jpg" width="960" height="1280" alt="Balaguru Portrait" class="about-image">
+                        </div>
+                        <div class="about-image-frame"></div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="about-content">
+                        <p class="about-lead" data-animate="fade-up">
+                            I'm <strong>Balaguru K</strong>, a creative designer based in Madurai, Tamil Nadu, 
+                            with a passion for transforming ideas into compelling visual narratives.
+                        </p>
+
+                        <div class="about-text" data-animate="fade-up">
+                            <p>
+                                Currently pursuing my B.E. in Computer Science & Engineering at Latha Mathavan 
+                                Engineering College, I blend technical precision with artistic vision. My design 
+                                journey began with a curiosity for how brands communicate, and has evolved into 
+                                a deep expertise in visual identity systems.
+                            </p>
+                            <p>
+                                I've had the privilege of interning at <strong>VVR Studios</strong> and 
+                                <strong>MAINCRAFT Technologies</strong>, where I honed my skills in branding, 
+                                social media design, and print materials. Every project is an opportunity to 
+                                push creative boundaries while staying true to the brand's essence.
+                            </p>
+                        </div>
+
+                        <div class="about-skills" data-animate="fade-up">
+                            <h3 class="skills-title">Core Expertise</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-icon">🎨</div>
+                                    <span class="skill-name">Brand Identity</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">📦</div>
+                                    <span class="skill-name">Packaging Design</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">📱</div>
+                                    <span class="skill-name">Social Media</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">✏️</div>
+                                    <span class="skill-name">Logo Design</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">🖨️</div>
+                                    <span class="skill-name">Print Design</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">🌐</div>
+                                    <span class="skill-name">Digital Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-tools" data-animate="fade-up">
+                            <h3 class="tools-title">Tools & Software</h3>
+                            <div class="tools-list">
+                                <span class="tool-tag">Adobe Photoshop</span>
+                                <span class="tool-tag">Adobe Illustrator</span>
+                                <span class="tool-tag">Adobe InDesign</span>
+                                <span class="tool-tag">Figma</span>
+                                <span class="tool-tag">Canva</span>
+                            </div>
+                        </div>
+
+                        <div class="about-cta" data-animate="fade-up">
+                            <a href="assets/resume/Balaguru-Resume.pdf" class="btn btn-primary" download data-cursor="button">
+                                <span class="btn-text">Download Resume</span>
+                                <span class="btn-arrow">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="timeline-section">
+                <h3 class="timeline-title" data-animate="fade-up">Experience & Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item" data-animate="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026</span>
+                            <h4 class="timeline-role">Graphic Design Intern</h4>
+                            <p class="timeline-company">MAINCRAFT Technologies</p>
+                            <p class="timeline-desc">Created marketing posters, brochures, and social media graphics. Assisted in logo design and brand identity development.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024</span>
+                            <h4 class="timeline-role">Graphic Design Intern</h4>
+                            <p class="timeline-company">VVR Studios</p>
+                            <p class="timeline-desc">Designed social media posts, promotional banners, and marketing creatives. Worked on typography, layout design, and color selection.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 — 2026</span>
+                            <h4 class="timeline-role">B.E. Computer Science</h4>
+                            <p class="timeline-company">Latha Mathavan Engineering College</p>
+                            <p class="timeline-desc">Pursuing Bachelor's degree with focus on design and creative technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section class="section section-projects" id="projects">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">Selected Work</span>
+                <h2 class="section-title">Projects That<br>Define Me</h2>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all" data-cursor="button">All</button>
+                <button class="filter-btn" data-filter="branding" data-cursor="button">Branding</button>
+                <button class="filter-btn" data-filter="packaging" data-cursor="button">Packaging</button>
+                <button class="filter-btn" data-filter="social" data-cursor="button">Social Media</button>
+                <button class="filter-btn" data-filter="print" data-cursor="button">Print</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Project 1: Éclat Noir -->
+                <article class="project-card" data-category="branding packaging" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/eclat-noir-hero.jpg" width="1149" height="1369" alt="Éclat Noir Luxury Perfume Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Luxury Branding</span>
+                                <h3 class="project-name">Éclat Noir</h3>
+                                <p class="project-desc">Premium perfume brand identity with dark elegance</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Packaging</span>
+                    </div>
+                </article>
+
+                <!-- Project 2: Ember Oak -->
+                <article class="project-card" data-category="branding" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/ember-oak.jpg" width="1536" height="1024" alt="Ember Oak Restaurant Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Restaurant Branding</span>
+                                <h3 class="project-name">Ember Oak</h3>
+                                <p class="project-desc">Kitchen & Bar brand identity with warm sophistication</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Identity</span>
+                    </div>
+                </article>
+
+                <!-- Project 3: Roast Republic -->
+                <article class="project-card" data-category="branding packaging" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/roast-republic.jpg" width="1536" height="1024" alt="Roast Republic Coffee Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Coffee Branding</span>
+                                <h3 class="project-name">Roast Republic</h3>
+                                <p class="project-desc">Artisan coffee brand with bold personality</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Packaging</span>
+                    </div>
+                </article>
+
+                <!-- Project 4: Aurelia Naturals -->
+                <article class="project-card" data-category="branding packaging" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/aurelia-naturals.jpg" width="1536" height="1024" alt="Aurelia Naturals Skincare Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Skincare Branding</span>
+                                <h3 class="project-name">Aurelia Naturals</h3>
+                                <p class="project-desc">Botanical skincare brand with pure elegance</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Packaging</span>
+                    </div>
+                </article>
+
+                <!-- Project 5: Brew & Beyond -->
+                <article class="project-card" data-category="branding" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/brew-beyond.jpg" width="1536" height="1024" alt="Brew & Beyond Coffee Roasters Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Coffee Roasters</span>
+                                <h3 class="project-name">Brew & Beyond</h3>
+                                <p class="project-desc">Artisan coffee roasters brand identity</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Identity</span>
+                    </div>
+                </article>
+
+                <!-- Project 6: Éclat Noir Watch -->
+                <article class="project-card" data-category="branding" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/eclat-noir-watch.jpg" width="1536" height="1024" alt="Éclat Noir Luxury Watch Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Luxury Watch</span>
+                                <h3 class="project-name">Éclat Noir Watch</h3>
+                                <p class="project-desc">Timeless elegance in watch brand identity</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Luxury</span>
+                    </div>
+                </article>
+
+                <!-- Project 7: Bamboo Kings -->
+                <article class="project-card" data-category="branding social" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/bamboo-kings.jpg" width="1536" height="1024" alt="Bamboo Kings Briyani Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Restaurant Branding</span>
+                                <h3 class="project-name">Bamboo Kings</h3>
+                                <p class="project-desc">Royal briyani brand with heritage appeal</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Social</span>
+                    </div>
+                </article>
+
+                <!-- Project 8: Velore Apparel -->
+                <article class="project-card" data-category="branding" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/velore-apparel.jpg" width="1536" height="1024" alt="Velore Apparel Fashion Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Fashion Branding</span>
+                                <h3 class="project-name">Velore Apparel</h3>
+                                <p class="project-desc">Modern fashion brand with timeless style</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Fashion</span>
+                    </div>
+                </article>
+
+                <!-- Project 9: Shutter Stories -->
+                <article class="project-card" data-category="branding" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/shutter-stories.jpg" width="1536" height="1024" alt="Shutter Stories Photography Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Photography Brand</span>
+                                <h3 class="project-name">Shutter Stories</h3>
+                                <p class="project-desc">Capturing moments through brand identity</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Photography</span>
+                    </div>
+                </article>
+
+                <!-- Project 10: Peak Performance -->
+                <article class="project-card" data-category="branding social" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/peak-performance.jpg" width="1536" height="1024" alt="Peak Performance Fitness Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Fitness Branding</span>
+                                <h3 class="project-name">Peak Performance</h3>
+                                <p class="project-desc">Dynamic fitness brand with powerful identity</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Fitness</span>
+                    </div>
+                </article>
+
+                <!-- Project 11: Naturelle Organics -->
+                <article class="project-card" data-category="branding packaging" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/naturelle-organics.jpg" width="1536" height="1024" alt="Naturelle Organics Skincare Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Organic Skincare</span>
+                                <h3 class="project-name">Naturelle Organics</h3>
+                                <p class="project-desc">Clean beauty brand with natural essence</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Organic</span>
+                    </div>
+                </article>
+
+                <!-- Project 12: Wanderlust Travel -->
+                <article class="project-card" data-category="branding" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/wanderlust-travel.jpg" width="1536" height="1024" alt="Wanderlust Travel Co. Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Travel Branding</span>
+                                <h3 class="project-name">Wanderlust Travel</h3>
+                                <p class="project-desc">Adventure travel brand with wanderlust spirit</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Travel</span>
+                    </div>
+                </article>
+
+                <!-- Project 13: Horizon Properties -->
+                <article class="project-card" data-category="branding print" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/horizon-properties.jpg" width="1536" height="1024" alt="Horizon Properties Real Estate Branding" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Real Estate</span>
+                                <h3 class="project-name">Horizon Properties</h3>
+                                <p class="project-desc">Premium real estate brand identity</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Print</span>
+                    </div>
+                </article>
+
+                <!-- Project 14: Kriyaura -->
+                <article class="project-card" data-category="branding packaging" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/kriyaura-branding.jpg" width="1600" height="1448" alt="Kriyaura Brand Identity" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Brand Identity</span>
+                                <h3 class="project-name">Kriyaura</h3>
+                                <p class="project-desc">Holistic wellness brand with organic touch</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Packaging</span>
+                    </div>
+                </article>
+
+                <!-- Project 15: Product Posters -->
+                <article class="project-card" data-category="social print" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/pure-bite.jpg" width="736" height="1104" alt="Pure Bite Product Poster" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Product Poster</span>
+                                <h3 class="project-name">Pure Bite</h3>
+                                <p class="project-desc">Plant-based nutrition poster design</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Poster</span>
+                        <span class="project-tag">Product</span>
+                    </div>
+                </article>
+
+                <!-- Project 16: Food Poster -->
+                <article class="project-card" data-category="social print" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/food-poster.jpg" width="1080" height="1080" alt="Delicious Food Ad Poster" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Food Ad Poster</span>
+                                <h3 class="project-name">Delicious Food In Town</h3>
+                                <p class="project-desc">Bold food promotion poster with an appetite-driving layout</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Poster</span>
+                        <span class="project-tag">Social Media</span>
+                    </div>
+                </article>
+
+                <!-- Project 17: Sneaker Poster -->
+                <article class="project-card" data-category="social print" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/sneaker-poster.jpg" width="1080" height="1080" alt="Exclusive Sneaker Ad Poster" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Product Ad Poster</span>
+                                <h3 class="project-name">Exclusive Shoes</h3>
+                                <p class="project-desc">High-impact sneaker campaign poster with bold typography</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Poster</span>
+                        <span class="project-tag">Social Media</span>
+                    </div>
+                </article>
+
+                <!-- Project 18: Citrus Can Packaging -->
+                <article class="project-card" data-category="branding packaging" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/citrus-can.jpg" width="736" height="985" alt="Citrus Beverage Can Packaging Design" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Beverage Packaging</span>
+                                <h3 class="project-name">Citrus Can</h3>
+                                <p class="project-desc">Torn-paper concept packaging design revealing fresh citrus inside</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Packaging</span>
+                        <span class="project-tag">Branding</span>
+                    </div>
+                </article>
+
+                <!-- Project 19: FlashPop Iced Pistachio -->
+                <article class="project-card" data-category="social print" data-animate="scale-up">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/projects/flashpop-gelato.jpg" width="735" height="985" alt="FlashPop Iced Pistachio Drink Poster" class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category">Beverage Ad Poster</span>
+                                <h3 class="project-name">FlashPop Iced Coltache</h3>
+                                <p class="project-desc">Vibrant pistachio drink promotion with playful oversized type</p>
+                                <button class="project-view-btn" data-cursor="button">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Poster</span>
+                        <span class="project-tag">Social Media</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Showreel Section -->
+            <div class="showreel-section" data-animate="fade-up">
+                <div class="showreel-container">
+                    <video class="showreel-video" autoplay muted loop playsinline poster="assets/images/projects/eclat-noir-1.jpg">
+                        <source src="assets/images/projects/showreel.mp4" type="video/mp4">
+                    </video>
+                    <div class="showreel-overlay">
+                        <h3 class="showreel-title">Motion Reel</h3>
+                        <p class="showreel-desc">A glimpse into my creative process</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="section section-contact" id="contact">
+            <div class="contact-bg">
+                <div class="bg-glow bg-glow-3"></div>
+            </div>
+
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">Get in Touch</span>
+                <h2 class="section-title">Let's Create<br>Something Great</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-info" data-animate="fade-up">
+                        <p class="contact-lead">
+                            Have a project in mind? I'd love to hear about it. 
+                            Let's collaborate and bring your vision to life.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-detail">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:balaguruk1805@gmail.com" class="contact-value">balaguruk1805@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-detail">
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+916383547318" class="contact-value">+91 63835 47318</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-detail">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Madurai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <span class="social-label">Follow Me</span>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/pixel.by.guru?utm_source=qr&igsh=a2J1aXRqNWloZmVp" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" data-cursor="button">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.behance.net/guruk12" target="_blank" rel="noopener" class="social-icon" aria-label="Behance" data-cursor="button">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 3h6a4 4 0 014 4 4 4 0 01-4 4H3V3z"/>
+                                        <path d="M3 11h7a4 4 0 014 4 4 4 0 01-4 4H3v-8z"/>
+                                        <path d="M15 4h6M15 20a4 4 0 100-8 4 4 0 000 8z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Dribbble" data-cursor="button">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/balaguru-karuppaiah" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" data-cursor="button">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm" data-animate="fade-up">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" " class="form-input">
+                            <label for="name" class="form-label">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" " class="form-input">
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="subject" name="subject" class="form-input form-select">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="branding">Brand Identity</option>
+                                <option value="packaging">Packaging Design</option>
+                                <option value="social">Social Media Design</option>
+                                <option value="print">Print Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" " class="form-input form-textarea"></textarea>
+                            <label for="message" class="form-label">Tell me about your project</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" data-cursor="button">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-arrow">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <span class="footer-logo">Balaguru</span>
+                        <p class="footer-tagline">Creative Designer crafting visual identities that inspire.</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#projects" class="footer-link">Projects</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2026 Balaguru K. All rights reserved.</p>
+                    <p class="footer-credit">Designed & Built with passion</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal" data-cursor="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
