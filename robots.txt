@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://balaguru.design/sitemap.xml
+Sitemap: https://balaguru-sys.github.io/Balaguru-portfolio/sitemap.xml
