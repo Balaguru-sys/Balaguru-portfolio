@@ -769,18 +769,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(form);
             const name = formData.get('name');
 
-            // Simulate form submission
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.querySelector('.btn-text').textContent;
             submitBtn.querySelector('.btn-text').textContent = 'Sending...';
             submitBtn.disabled = true;
 
-            setTimeout(() => {
-                showToast(`Thanks ${name}! Your message has been sent.`);
-                form.reset();
-                submitBtn.querySelector('.btn-text').textContent = originalText;
-                submitBtn.disabled = false;
-            }, 1500);
+            fetch('https://formspree.io/f/xykrwwyb', {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        showToast(`Thanks ${name}! Your message has been sent.`);
+                        form.reset();
+                    } else {
+                        return response.json().then((data) => {
+                            const errorMsg = (data && data.errors)
+                                ? data.errors.map((err) => err.message).join(', ')
+                                : 'Something went wrong. Please email me directly instead.';
+                            showToast(errorMsg);
+                        });
+                    }
+                })
+                .catch(() => {
+                    showToast('Network error — please email me directly instead.');
+                })
+                .finally(() => {
+                    submitBtn.querySelector('.btn-text').textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         });
     }
 
