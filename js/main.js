@@ -700,6 +700,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 category: 'Beverage Ad Poster',
                 desc: 'A vibrant promotional poster for an iced pistachio drink, combining oversized display type with floating pistachio elements for a playful, scroll-stopping social ad.',
                 tags: ['Poster', 'Social Media', 'Print', 'Beverage']
+            },
+            'Stay Cool': {
+                image: 'assets/images/projects/stay-cool-coke.png',
+                category: 'Beverage Ad Poster',
+                desc: 'A surreal spec campaign pairing a classic beverage identity with a bold, cinematic character concept. Dramatic lighting and a striking central figure make this an attention-grabbing social ad concept.',
+                tags: ['Poster', 'Social Media', 'Concept', 'Beverage']
+            },
+            'Fuel Your Day': {
+                image: 'assets/images/projects/fuel-your-day-coffee.png',
+                category: 'Coffee Ad Poster',
+                desc: 'A bold, energetic campaign poster for a coffee brand built around instant energy and rich aroma. Dynamic splash photography and punchy typography drive an appetite for the product.',
+                tags: ['Poster', 'Social Media', 'Coffee']
+            },
+            'Draws A Crowd': {
+                image: 'assets/images/projects/draws-a-crowd-jd.png',
+                category: 'Spirits Ad Poster',
+                desc: 'A honeyed spec campaign for a whiskey liqueur, pairing warm, golden tones with a striking bee motif. Moody lifestyle photography sets an inviting, premium tone.',
+                tags: ['Poster', 'Social Media', 'Concept', 'Spirits']
+            },
+            'A Hundred Memories': {
+                image: 'assets/images/projects/hundred-memories-biryani.png',
+                category: 'Restaurant Ad Poster',
+                desc: 'A heritage-driven spec campaign celebrating a legendary biryani tradition dating back to 1957. Rich, warm tones and nostalgic styling anchor the brand storytelling.',
+                tags: ['Poster', 'Social Media', 'Food', 'Restaurant']
             }
         };
 
